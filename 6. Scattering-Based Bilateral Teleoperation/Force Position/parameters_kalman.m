@@ -35,12 +35,33 @@ Ks = 4*Km;
 % Environment impedance parameters
 Be = 100; 
 Ke = 200; 
-xe = 6;
+xe = 4;
 
 % Transportation variables
-b = 10;
+b = 20;
 delay = 10;
 lambda = 50;
 
 %aditional parameters
+variance = 0.000001;
 Ts = 0.001;
+
+%kalman parameters
+A = [[1, Ts, (Ts^2)/2];
+     [0, 1,   Ts     ];
+     [0, 0,   1      ]];
+B = [(Ts^3)/6; (Ts^2)/2; Ts];
+C = [1,0,0];
+
+
+R = 0.0000001;
+q = 10000000;
+Q = (B*B')*q;
+P = 0.00001;
+
+paramsKalman.A = A;
+paramsKalman.B = B;
+paramsKalman.C = C;
+paramsKalman.R = R;
+paramsKalman.Q = Q;
+paramsKalman.P = P;
