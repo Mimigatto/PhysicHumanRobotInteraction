@@ -12,7 +12,7 @@ This repository provides a detailed analysis of various teleoperation architectu
    - Four-Channel Bilateral Teleoperation (Architecture fix)
    - Four-Channel Bilateral Teleoperation (Position Force and Position[PF-P]channel Human interaction loop fix)
    - Two-Channel Teleoperation
-   - Three-Channel Position-Force and Position (PF-P) Teleoperation
+     
 
  These architectures facilitate communication and control between the human operator and the robot, enabling the operator to manipulate the robot's movements and actions.
 
