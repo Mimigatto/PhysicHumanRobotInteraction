@@ -9,17 +9,17 @@ This repository provides a detailed analysis of various teleoperation architectu
 
 1. **Teleoperation Architectures:** The literature explores different teleoperation architectures, including:
 
-   - Four-Channel Bilateral Teleoperation
-   - Two-Channel Teleoperation
-   - Three-Channel Position-Force and Position (PF-P) Teleoperation
-
-   These architectures facilitate communication and control between the human operator and the robot, enabling the operator to manipulate the robot's movements and actions.
+   - Four-Channel Bilateral Teleoperation (Architecture fix)
+   - Four-Channel Bilateral Teleoperation (Position Force and Position[PF-P]channel Human interaction loop fix)
+ These architectures facilitate communication and control between the human operator and the robot, enabling the operator to manipulate the robot's movements and actions.
 
 2. **Kalman Filter/Predictor and Kalman Smoother:** The use of Kalman Filter/Predictor and Kalman Smoother techniques in teleoperation is discussed. These techniques aid in improving the accuracy of position, velocity, and force estimation in teleoperation systems. Linear regression is employed to predict the motor torque, enhancing the overall performance and reliability of the teleoperation system.
+   - Kalman Filter predictor (Kalman filter added RMSE)
+   - Kalman Smoother         (Kalman smoother fix graphs and added RMSE)
 
-3. **Communication Channel Optimization:** The repository explores tank-based and scattering wave-based architectures designed to eliminate significant delays in the communication channel. By optimizing the communication protocols and reducing latency, these architectures enhance the real-time interaction between the human operator and the robot.
+4. **Communication Channel Optimization:** The repository explores tank-based and scattering wave-based architectures designed to eliminate significant delays in the communication channel. By optimizing the communication protocols and reducing latency, these architectures enhance the real-time interaction between the human operator and the robot.
 
-4. **Applications in Physical Human Robot Interaction:** The literature provided in this repository sheds light on the broader field of Physical Human Robot Interaction (pHRI) and its applications in teleoperation. pHRI encompasses the study and development of systems and interfaces that enable seamless interaction between humans and robots, opening up possibilities for collaborative work, assistance, and augmentation.
+5. **Applications in Physical Human Robot Interaction:** The literature provided in this repository sheds light on the broader field of Physical Human Robot Interaction (pHRI) and its applications in teleoperation. pHRI encompasses the study and development of systems and interfaces that enable seamless interaction between humans and robots, opening up possibilities for collaborative work, assistance, and augmentation.
 
 ### Getting Started
 
