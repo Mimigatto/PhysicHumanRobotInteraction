@@ -1,7 +1,7 @@
 
 ## Physical Human Robot Interaction - README
 
-Welcome to the Physical Human Robot Interaction repository! This repository focuses on the field of teleoperation, which involves the remote control of a robot by a human operator. Teleoperation allows humans to perform tasks in environments that may be dangerous or inaccessible, enhancing their capabilities through robotic assistance.
+Welcome to the Physical Human-Robot Interaction repository! This repository focuses on the field of teleoperation, which involves the remote control of a robot by a human operator. Teleoperation allows humans to perform tasks in environments that may be dangerous or inaccessible, enhancing their capabilities through robotic assistance.
 
 ### Repository Contents
 
@@ -11,6 +11,9 @@ This repository provides a detailed analysis of various teleoperation architectu
 
    - Four-Channel Bilateral Teleoperation (Architecture fix)
    - Four-Channel Bilateral Teleoperation (Position Force and Position[PF-P]channel Human interaction loop fix)
+   - Two-Channel Teleoperation
+   - Three-Channel Position-Force and Position (PF-P) Teleoperation
+
  These architectures facilitate communication and control between the human operator and the robot, enabling the operator to manipulate the robot's movements and actions.
 
 2. **Kalman Filter/Predictor and Kalman Smoother:** The use of Kalman Filter/Predictor and Kalman Smoother techniques in teleoperation is discussed. These techniques aid in improving the accuracy of position, velocity, and force estimation in teleoperation systems. Linear regression is employed to predict the motor torque, enhancing the overall performance and reliability of the teleoperation system.
