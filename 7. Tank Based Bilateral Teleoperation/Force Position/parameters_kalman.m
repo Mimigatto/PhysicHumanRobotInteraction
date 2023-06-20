@@ -21,7 +21,7 @@ Bh = 1;
 % Inertia/Damping of robot dynamics
 Mm = 0.5;
 Ms = 2;
-Dm = 1.3;
+Dm = 5.3;
 Ds = 1.2;
 
 % Master controller
@@ -35,18 +35,40 @@ Ks = 4*Km;
 % Environment impedance parameters
 Be = 100; 
 Ke = 200; 
-xe = 120;
+xe = 300;
 
 % Transportation variables
 delay = 10;
+lambda = 50;
+
+%aditional parameters
+variance = 0.000001;
+Ts = 0.001;
 
 %Tank parameters
 alpha = 55;
-beta = 0.001;
-Hd = 550;
+beta = 0.1;
+Hd = 555;
 
 Hm_init = 0;
 Hs_init = 0;
 
-%aditional parameters
-Ts = 0.001;
+%kalman parameters
+A = [[1, Ts, (Ts^2)/2];
+     [0, 1,   Ts     ];
+     [0, 0,   1      ]];
+B = [(Ts^3)/6; (Ts^2)/2; Ts];
+C = [1,0,0];
+
+
+R = 0.000001;
+q = 10000;
+Q = (B*B')*q;
+P = 0.0001;
+
+paramsKalman.A = A;
+paramsKalman.B = B;
+paramsKalman.C = C;
+paramsKalman.R = R;
+paramsKalman.Q = Q;
+paramsKalman.P = P;
